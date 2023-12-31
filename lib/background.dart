@@ -16,11 +16,13 @@ class GradientContainer extends StatelessWidget {
       )),
       child: Center(
           child: Column(
+        mainAxisSize: MainAxisSize.min,
         children: [
           Image.asset(
             'assets/images/dice-1.png',
             width: 250,
           ),
+          TextButton(onPressed: () {}, child: const Text('Re-Roll'))
         ],
       )),
     );
