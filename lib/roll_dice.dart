@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DiceRoll extends StatefulWidget {
-  const DiceRoll(key) : super(key: key);
+  const DiceRoll({key}) : super(key: key);
   @override
   State<DiceRoll> createState() => _DiceRoll();
 }
