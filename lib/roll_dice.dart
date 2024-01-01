@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DiceRoll extends StatefulWidget {
-  const DiceRoll(key) : super(key: key);
+  const DiceRoll({key}) : super(key: key);
   @override
   State<DiceRoll> createState() => _DiceRoll();
 }
@@ -24,7 +24,10 @@ class _DiceRoll extends State<DiceRoll> {
           assetImage,
           width: 250,
         ),
-        TextButton(onPressed: rollDice, child: const Text('Re-Roll'))
+        const Padding(padding: EdgeInsets.only(top: 10.0)),
+        TextButton(
+            onPressed: rollDice,
+            child: const Text(style: TextStyle(color: Colors.white), 'Re-Roll'))
       ],
     ));
   }
