@@ -24,7 +24,10 @@ class _DiceRoll extends State<DiceRoll> {
           assetImage,
           width: 250,
         ),
-        TextButton(onPressed: rollDice, child: const Text('Re-Roll'))
+        const Padding(padding: EdgeInsets.only(top: 10.0)),
+        TextButton(
+            onPressed: rollDice,
+            child: const Text(style: TextStyle(color: Colors.white), 'Re-Roll'))
       ],
     ));
   }
